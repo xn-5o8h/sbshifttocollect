@@ -1,0 +1,11 @@
+[
+  [
+    { "op": "test", "path": "/scripts" },
+    { "op": "add", "path": "/scripts/-", "value": "/objects/scripts/stcguiscript.lua" }
+  ],
+
+  [
+    { "op": "test", "path": "/scripts", "inverse": true },
+    { "op": "add", "path": "/scripts", "value": [ "/objects/scripts/stcguiscript.lua" ] }
+  ]
+]
