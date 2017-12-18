@@ -1,0 +1,11 @@
+{
+  "author" : "Cyel",
+  "description" : "Hold shift while opening a container to loot everything in it.",
+  "friendlyName" : "Shift To Loot",
+  "includes" : ["Improved Containers"],
+  "link" : "steam://url/CommunityFilePage/1235347675",
+  "name" : "shifttocollect",
+  "steamContentId" : "1235347675",
+  "tags" : "User Interface|Mechanics",
+  "version" : "1"
+}

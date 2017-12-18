@@ -1,0 +1,15 @@
+{
+  "itemName" : "stctrickeries",
+  "shortdescription" : "A disgusting hack",
+  "description" : "^red;you shouldn't be seeing this. If you do, please report it to where you downloaded the Shift To Loot mod!",
+  "price" : 1,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "category" : "Tool",
+  "twoHanded" : false,
+  "itemTags" : ["tool"],
+  "inventoryIcon" : "/assetmissing.png",
+
+  "scripts" : ["stctrickeries.lua"],
+  "scriptDelta" : 5
+}
