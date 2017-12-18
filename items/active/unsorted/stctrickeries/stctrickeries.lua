@@ -7,7 +7,7 @@ function update(_,_, shiftHeld)
       items = world.containerItems(containerId)
 
       if items then
-        for _,item in ipairs(items) do
+        for _,item in pairs(items) do
           player.giveItem(item)
         end
 
