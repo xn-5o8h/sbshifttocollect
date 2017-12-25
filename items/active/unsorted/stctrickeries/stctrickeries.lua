@@ -26,7 +26,5 @@ end
 
 function lootItem(item, offset)
   player.giveItem(item)
-  if player.hasItem(item, true) then
-    world.containerConsumeAt(self.containerId, offset - 1, item.count)
-  end
+  world.containerConsumeAt(self.containerId, offset - 1, item.count)
 end
