@@ -5,7 +5,7 @@ function update(_,_, shiftHeld)
   self.swapItem = config.getParameter("swapItem")
 
   if shiftHeld and self.containerId and world.entityExists(self.containerId) then
-    status, result = pcall(eatItems)
+    local status, result = pcall(eatItems)
   end
 
   if self.swapItem then player.setSwapSlotItem(self.swapItem)
@@ -13,7 +13,7 @@ function update(_,_, shiftHeld)
 end
 
 function eatItems()
-  items = world.containerItems(self.containerId)
+  local items = world.containerItems(self.containerId)
 
   if items then
     for offset, item in pairs(items) do
