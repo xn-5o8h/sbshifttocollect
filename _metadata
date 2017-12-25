@@ -1,11 +1,11 @@
 {
   "author" : "Cyel",
-  "description" : "Hold shift while opening a container (chests etc.) to loot everything in it.\n\nNeeds to be installed by the host and all clients, and should be compatible with any other mods that changes containers? If you find it not working with a chest from a mod, please post it in the discussion forum thingy here! http://steamcommunity.com/workshop/filedetails/discussion/1235347675/2549465882931048686/\n\n\nBased on a post by Mikesbullseye on the #modding channel of the Starbound's discord.\n\nAlso available on github: https://github.com/xn-5o8h/sbshifttocollect/releases/latest",
+  "description" : "Hold shift while opening a container (chests etc.) to loot everything in it.\n\nNeeds to be installed by the host and all clients, and should be compatible with any other mods that changes containers? If you find it not working with a chest from a mod, please post it in the discussion forum thingy here! http://steamcommunity.com/workshop/filedetails/discussion/1235347675/2549465882931048686/\n\nWhen looting a container with a full inventory, items that couldn't be placed in your inventory will be dropped on the floor instead.\n\nIf you see an invisible item named \"Shift To Loot's secret trick\", and have some time to spare, please put your log file (in the game's folder, /storage/starbound.log) on pastebin and post the link here! Regardless, the item should disappear after you click on it again.\n\nBased on a post by Mikesbullseye on the #modding channel of the Starbound's discord.\nAlso available on github: https://github.com/xn-5o8h/sbshifttocollect/releases/latest",
   "friendlyName" : "Shift To Loot",
   "includes" : ["Improved Containers", "Enhanced Storage"],
   "link" : "steam://url/CommunityFilePage/1235347675",
   "name" : "shifttocollect",
   "steamContentId" : "1235347675",
   "tags" : "User Interface|Mechanics",
-  "version" : "1.5"
+  "version" : "1.7"
 }
