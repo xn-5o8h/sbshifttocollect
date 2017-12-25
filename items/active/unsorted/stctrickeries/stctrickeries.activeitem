@@ -1,7 +1,7 @@
 {
   "itemName" : "stctrickeries",
   "shortdescription" : "A disgusting hack",
-  "description" : "^red;you shouldn't be seeing this. If you do, please report it to where you downloaded the Shift To Loot mod!",
+  "description" : "^red;If you're seeing this, please report to where you downloaded the Shift To Loot mod, along with your starbound.log file!",
   "price" : 1,
   "maxStack" : 1,
   "rarity" : "legendary",
@@ -10,6 +10,7 @@
   "itemTags" : ["tool"],
   "inventoryIcon" : "/assetmissing.png",
 
+  "retainScriptStorageInItem": true,
   "scripts" : ["stctrickeries.lua"],
   "scriptDelta" : 5
 }
