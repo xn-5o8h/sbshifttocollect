@@ -1,24 +1,32 @@
+require "/scripts/util.lua"
+
 function update(_,_, shiftHeld)
-  containerId = config.getParameter("containerId")
-  swapItem = config.getParameter("swapItem")
+  self.containerId = config.getParameter("containerId")
+  self.swapItem = config.getParameter("swapItem")
 
-  if containerId and world.entityExists(containerId) then
-    if shiftHeld then
-      items = world.containerItems(containerId)
-
-      if items then
-        for _,item in pairs(items) do
-          player.giveItem(item)
-        end
-
-        -- for some reason this doesn't return the consumed items list, but does consume everything
-        -- so I get the item with containerItems then clean up everything afterward with containerTakeAll
-        world.containerTakeAll(containerId)
-        player.cleanupItems()
-      end
-    end
+  if shiftHeld and self.containerId and world.entityExists(self.containerId) then
+    local status, result = pcall(eatItems)
   end
-  
-  if swapItem then player.setSwapSlotItem(swapItem)
+
+  if self.swapItem then player.setSwapSlotItem(self.swapItem)
   else item.setCount(0) end
+end
+
+function eatItems()
+  local items = world.containerItems(self.containerId)
+
+  if items then
+    for offset, item in pairs(items) do
+      lootItem(item, offset)
+    end
+
+    player.cleanupItems()
+  end
+end
+
+function lootItem(item, offset)
+  player.giveItem(item)
+  if player.hasItem(item, true) then
+    world.containerConsumeAt(self.containerId, offset - 1, item.count)
+  end
 end

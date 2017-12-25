@@ -1,7 +1,7 @@
 {
   "itemName" : "stctrickeries",
-  "shortdescription" : "A disgusting hack",
-  "description" : "^red;you shouldn't be seeing this. If you do, please report it to where you downloaded the Shift To Loot mod!",
+  "shortdescription" : "Shift To Loot's secret trick",
+  "description" : "^red;If you're seeing this and it doesn't bother you, please post your starbound.log file where you downloaded the Shift To Loot mod; thanks! It should disappear if you put it in inventory and click it again.",
   "price" : 1,
   "maxStack" : 1,
   "rarity" : "legendary",
@@ -10,6 +10,7 @@
   "itemTags" : ["tool"],
   "inventoryIcon" : "/assetmissing.png",
 
+  "retainScriptStorageInItem": true,
   "scripts" : ["stctrickeries.lua"],
   "scriptDelta" : 5
 }
